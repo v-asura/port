@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --purple500:#281154;
+    --purple300:#270082;
+    --purple600:#1b0058;
+    --red600:#dc0000;
+    --body:#f9f6ff;
+    --max-width:1200px;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+section{
+    scroll-margin: 50px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.logo{
+    font-weight: 600;
+    font-size: 30px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #f9f6ff;
+}
+header{
+    background-color: var(--purple300);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(0 0 0 0.5);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    color: #f9f6ff;
+}
+nav ul{
+    display: flex;
+    gap: 1.3rem;
+}
+nav ul li{
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in;
+}
+nav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in;
+}
+.hero-sec{
+    background-image: url(image/hero_image.png);
+    height: 100vh;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero-sec .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.hero-sec h1{
+    font-size: 90px;
+}
+.music-sec{
+    padding-top: 50px;
+    background-color: var(--purple500);
+}
+.music-sec .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: #f9f6ff;
+}
+.ipad-img{
+    margin-top: -400px;
+    position: relative;
+    top: 400px;
+}
+button{
+    padding: 10px 15px;
+    border: none;
+    color: #f9f6ff;
+    font-size: 1.2rem;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    opacity: 0.5;
+    transition: 0.2s ease-in-out;
+}
+.start{
+    background-color: var(--red600);
+}
+.sec{
+    background-color: var(--purple300);
+}
+.about{
+    padding-top: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.about .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.video{
+    background-image: url(/Music_Website/image/video.png);
+    height: 100vh;
+    background-size: cover;
+    color: #f9f6ff;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    background-repeat: no-repeat;
+}
+.video .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.gift-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+    gap: 50px;
+    scroll-margin: 120px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.upper{
+    background-color: var(--purple600);
+    color: #f9f6ff;
+    padding: 20px;
+}
+.upper .container{
+    display: flex;
+    justify-content: space-between;
+}
+.upper h4{
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+}
+.lower{
+    background-color: var(--purple300);
+    text-align: center;
+    color: #f9f6ff;
+    padding: 10px;
+}

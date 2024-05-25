@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --lightining-color:#0089b7;
+    --dark-color: #003d62;
+    --darker-color: #003251;
+    --sec-color: #fff700;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+html,body{
+    font-family: "Poppins",sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+    color: white;
+}
+body{
+    font-size: 1.4rem;
+}
+header{
+    background-color: var(--lightining-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+   
+}
+section {
+    scroll-margin-top: 50px;
+  }
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+nav ul{
+    display: flex;
+    gap: 2rem;
+}
+nav li{
+    font-size: 1.8rem;
+    border-bottom: 0.4rem solid transparent;
+    transition: 0.3s ease-in-out;
+}
+nav li:hover{
+    border-bottom: 0.4rem solid var(--sec-color);
+    transition: 0.3s ease-in-out;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 700;
+}
+#hero{
+    background-color: var(--dark-color);
+    padding: 4rem 0;
+    border-bottom: 4px solid var(--lightining-color);
+}
+#hero .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.hero-content{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+.hero-img{
+     margin-bottom: -4.5rem; 
+}
+#hero h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.hi{
+    font-size: 6rem;
+    font-weight: bold;
+    color: var(--sec-color);
+}
+.name{
+    font-size: 5rem;
+}
+#hero h2{
+    font-size: 3.8rem;
+    font-weight: bold;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */ /* Adjust as needed */
+    animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange;
+    }
+  }
+
+/* Project Section */
+#project{
+    background-color: var(--darker-color);
+    margin-top: -2rem;
+    padding-bottom: 2rem;
+}
+#project h2{
+    font-size: 6rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+#project span{
+    font-size: small;
+    font-weight: normal;
+}
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+.item{
+   display: grid;
+   place-items: center;
+}
+.card{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+} 
+.card:hover{
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+}
+.card:hover img{
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    opacity: 0.8;
+}
+.card:hover .card-content{
+    background-color: #fff;
+    color: black;
+    transform: translateY(0px);
+}
+.card-content{
+    padding: 2rem;
+    position: relative;
+    top: -6.5rem;
+    margin-bottom: -6.5rem;
+    transition: 0.5s ease-in-out;
+    transform: translateY(100px);
+}
+.card-content h3{
+    text-align: center;
+}
+/* contact */
+#contact{
+    background-color: var(--dark-color);
+}
+#contact h2{
+    font-size: 6rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+#contact .container{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+}
+.top{
+    max-width: 800px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+.way{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.way i{
+    font-size: 3rem;
+}
+.way h3{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.bottom{
+    max-width: 400px;
+    gap: 5rem;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+/* Footer */
+footer{
+    background-color: var(--darker-color);
+    padding: 2rem;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+@media (max-width: 500px) {
+    html {
+      font-size: 32%;
+    }
+    #hero .container {
+      flex-direction: column;
+    }
+    .hero-image {
+      display: grid;
+      place-items: center;
+    }
+    #contact .container {
+      height: 50vh;
+    }
+  }
